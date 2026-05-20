@@ -338,7 +338,7 @@ Updates the display name and location of a device.
 
 
 
-## 4.4 GetRegistered Users on a Device
+## 4.4 Get Registered Users on a Device
 **POST** `/devices/{device_id}/users`
 
 ### Example Request
@@ -376,7 +376,7 @@ Updates the display name and location of a device.
 ---
 
 
-## 4.4 Get Device Attendance History
+## 4.5 Get Device Attendance History
 
 **POST** `/devices/{device_id}/attendance`
 

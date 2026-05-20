@@ -336,22 +336,21 @@ Updates the display name and location of a device.
 }
 ```
 
----
 
 
 ## 4.4 GetRegistered Users on a Device
+**POST** `/devices/{device_id}/users`
 
-
-### Example Success Response
+### Example Request
 
 ```json
 {
-  "api_token": "partner_api_token_here",
+  "api_token": "token_here",
   "limit": 100
 }
 ```
 
-### Example Error Response
+### Example Success Response
 
 ```json
 {
@@ -372,10 +371,10 @@ Updates the display name and location of a device.
     }
   ]
 }
+```
 
 ---
 
----
 
 ## 4.4 Get Device Attendance History
 

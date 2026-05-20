@@ -14,6 +14,7 @@
 4. Device & Hardware Endpoints
    - List All Registered Devices
    - Get Device Details
+   - Get Users on a Device
    - Update Device Name & Location
    - Get Device Attendance History
 5. General Attendance Endpoints
@@ -334,6 +335,45 @@ Updates the display name and location of a device.
   "message": "Device not found or no changes made."
 }
 ```
+
+---
+
+
+## 4.4 GetRegistered Users on a Device
+
+
+### Example Success Response
+
+```json
+{
+  "api_token": "partner_api_token_here",
+  "limit": 100
+}
+```
+
+### Example Error Response
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "hris_user_id": "EMP001",
+      "first_name": "John",
+      "last_name": "Doe",
+      "device_first_name": "JOHN",
+      "device_last_name": "DOE",
+      "is_enrolled": true,
+      "biometrics": {
+        "has_face": true,
+        "has_fingerprint": false
+      },
+      "last_seen": "2026-05-20T14:32:10+01:00"
+    }
+  ]
+}
+
+---
 
 ---
 
